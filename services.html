@@ -4,29 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice Areas | Law Office of Pearl G. Myers</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <style>
+        :root { --primary: #2c3e50; --accent: #a89060; --light: #fdfcf9; --text: #444; }
+        html { font-family: 'Segoe UI', sans-serif; }
+        body { margin: 0; background-color: var(--light); color: var(--text); }
+        nav { position: fixed; top: 0; width: 100%; background: white; padding: 1.2rem 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05); text-align: center; }
+        nav a { text-decoration: none; color: var(--primary); margin: 0 15px; font-weight: 600; text-transform: uppercase; font-size: 0.8rem; }
+        
+        .container { max-width: 1000px; margin: 120px auto 60px; padding: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+        .card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 4px solid var(--accent); }
+        .card h3 { color: var(--primary); margin-top: 0; }
+        
+        footer { padding: 40px; background: #f4f1ea; text-align: center; font-size: 0.8rem; }
+    </style>
 </head>
 <body>
-    <nav><a href="index.html">Home</a> | <a href="services.html">Practice Areas</a> | <a href="about.html">About</a> | <a href="contact.html">Contact</a></nav>
-    
-    <h1>Legal Services Focus</h1>
-    <p>We provide dedicated legal assistance in Northern California for the following matters:</p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-    <ul>
-        <li><strong>Wills and Trusts:</strong> Drafting comprehensive documents to manage your estate and avoid the costs of probate.</li>
-        <li><strong>Special Needs Trusts:</strong> Protecting the financial future of loved ones with disabilities without compromising their public benefits.</li>
-        <li><strong>Power of Attorney:</strong> Designating trusted individuals to handle your financial and legal affairs if you are unable to do so.</li>
-        <li><strong>Advance Health Care Directives:</strong> Ensuring your medical wishes are known and respected.</li>
-        <li><strong>Trust Administration:</strong> Helping trustees navigate the complex legal duties of managing a trust after a passing.</li>
-        <li><strong>Probate:</strong> Representing executors and heirs through the court-supervised distribution of assets.</li>
-    </ul>
-
-    <blockquote>
-        <em>Note: Our services are limited to the jurisdiction of the State of California.</em>
-    </blockquote>
+    <div class="container">
+        <h1 style="text-align: center; color: var(--primary);">Our Legal Services</h1>
+        <p style="text-align: center; max-width: 700px; margin: 0 auto;">We provide transparent, comprehensive legal focus in Northern California across the following practice areas:</p>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>Wills & Trusts</h3>
+                <p>Creating robust documents to ensure your assets are distributed according to your wishes while avoiding the cost of probate.</p>
+            </div>
+            <div class="card">
+                <h3>Special Needs Trusts</h3>
+                <p>Ensuring loved ones with disabilities are provided for without jeopardizing their eligibility for public assistance.</p>
+            </div>
+            <div class="card">
+                <h3>Trust Administration</h3>
+                <p>Guiding trustees through the legal and fiduciary responsibilities required to manage and distribute trust assets.</p>
+            </div>
+            <div class="card">
+                <h3>Probate</h3>
+                <p>Compassionate representation through the court process for executors and beneficiaries.</p>
+            </div>
+        </div>
+    </div>
 
     <footer>
-        <p><small>© 2026 Law Office of Pearl G. Myers</small></p>
+        <p>© 2026 Law Office of Pearl G. Myers | Licensed in California</p>
     </footer>
 </body>
 </html>
